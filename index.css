@@ -1,0 +1,37 @@
+body {
+    background-color:black;
+}
+h1 {
+    color: Yellow;
+}
+#imagem1 {
+    width:100px;
+    height:100px;
+    margin-top:10px;
+    margin-left:10px;
+    border-radius:30px;
+}
+#imagem1:hover {
+    transform: scale(1.05);
+}
+main {
+    margin-top:300px;
+    text-align:center;
+}
+#mudarcor {
+    background-color:white;
+    border-radius:30px;
+    top: 10px;
+    right: 20px;
+    position:fixed;
+    height:50px;
+    width:100px;
+    cursor: pointer;
+    padding: 1px 5px; 
+    width: fit-content;        /* Faz o botão ajustar ao conteúdo */
+   display: inline-block;  
+ }
+ #mudarcor:hover {
+     background: lightgray;
+     
+}
