@@ -1,5 +1,5 @@
 body {
-    background-color:black;
+    background-color:#708090;
 }
 h1 {
     color: Yellow;
@@ -15,8 +15,13 @@ h1 {
     transform: scale(1.05);
 }
 main {
-    margin-top:300px;
-    text-align:center;
+    margin-top:200px;
+    background-color:blue;
+    border-radius:15px;
+    width:820px;
+    max-width:1000px;
+    margin-left:28%;
+    padding: 20px;
 }
 #mudarcor {
     background-color:white;
@@ -34,4 +39,16 @@ main {
  #mudarcor:hover {
      background: lightgray;
      
+}
+@media (max-width: 768px) {
+    main {
+        margin-left:15%;
+        width:100px;
+    }
+}
+@media (max-width:1024px) {
+    main {
+        margin-left:24%;
+        width:500px;
+    }
 }
