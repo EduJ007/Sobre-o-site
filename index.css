@@ -1,44 +1,58 @@
 body {
-    background-color:rgb(29, 29, 29);
+    background-color:linear-gradient(to bottom, #ffffff, #e8e8e8);
+    font:normal 20px Arial;
 }
-h1 {
-    color: Yellow;
+#seta-container {
+   text-decoration: none;
+
 }
-#imagem1 {
-    width:100px;
-    height:100px;
-    margin-top:10px;
-    margin-left:10px;
-    border-radius:30px;
+
+#seta {
+    text-decoration:none;
+    color:black;
+    background-color:lightslategray;
+    max-width:80px;
+    border-radius:10px;
+    font-size:30px;
+    padding:10px;
+    top:1px;
+    border: 2px solid  black;
 }
-#imagem1:hover {
-    transform: scale(1.05);
+#texto {
+
 }
-main {
-    margin-top:150px;
-    background-color:blue;
-    border-radius:15px;
-    width:820px;
-    max-width:1000px;
-    margin-left:28%;
-    padding: 20px;
+p {
+    font-size:20px;
+}
+#mudarcor-container {
+  position: absolute;
+  top:8px;
+  right: 10px;
+  
 }
 #mudarcor {
-    background-color:white;
-    border-radius:30px;
-    top: 10px;
-    right: 20px;
-    position:fixed;
-    height:50px;
-    width:100px;
-    cursor: pointer;
-    padding: 1px 5px; 
-    width: fit-content;        /* Faz o botão ajustar ao conteúdo */
-   display: inline-block;  
- }
- #mudarcor:hover {
-     background: lightgray;
-     
+  background: lightslategray;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid  black;
+  color:black; 
+  
+}
+#contatos {
+    display: flex; gap: 170px;
+    
+}
+main {
+    background-color:lightslategray;
+    border-radius:15px;
+    margin-left:30%;
+    margin-top:100px;
+    max-width:800px;
+    padding: 20px;
+    border: 2px solid  black;
+    font-size:15px;
 }
 @media (max-width: 768px) {
     main {

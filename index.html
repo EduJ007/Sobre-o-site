@@ -9,33 +9,39 @@
 </head>
 <body>
 <header>
-  <a href="https://eduj007.github.io/Nibuy/?page=11" id="conteinerdaimagem">
-    <img src="imagemteste.png" alt="" id="imagem1">
-  </a>
+ <a href="https://eduj007.github.io/Nibuy/" id="seta-container">
+  <h1 id="seta">Voltar</h1>
+ </a>
+
+ <div id="mudarcor-container">
+ <h1 id="mudarcor" onclick="mudarcor()">Escuro / Claro</h1>
+</div>
 </header>
 
 <main>
-  <h1>  O site é feito usando a ultilidade de afiliado de alguns site. Por exemplo a shoope e o mercado livre que tem essas funcionalidades, mas os produtos são desses sites. O Nibuy é apenas para mostrar os produtos e direcionar o cliente ao site oficial para comprar. Com o tempo vai sendo adicionado mais produtos de outros sites, mas os produtos do site tem acima de 50 vendas ou visualizações então é confiavêl mais caso tenha dûvida veja as informações do produto quando apertar em Comprar. Caso apareça alguma questão importante pode apertar em Fale Conosco no site Principal.
+  <h1 id="texto" >  O site é feito usando a ultilidade de afiliado de alguns site. Por exemplo a shoope e o mercado livre que tem essas funcionalidades, mas os produtos são desses sites. O Nibuy é apenas para mostrar os produtos e direcionar o cliente ao site oficial para comprar. Com o tempo vai sendo adicionado mais produtos de outros sites, mas os produtos do site tem acima de 50 vendas ou visualizações então é confiavêl mais caso tenha dûvida veja as informações do produto quando apertar em Comprar. Caso apareça alguma questão importante Contate-me pelo Whatsapp ou Email: 
   </h1>
-
-  <h1 id="mudarcor"  onclick="mudarCor()">🌗</h1>
+  <div id="contatos">
+    <p><strong>Gmail: eduardojos457@gmail.com</strong></p>  
+    <p><strong>Whatsapp: +55 81 9361-1017</strong></p>
+  </div>
 </main>
 
 <script>
-    let corAtiva = false;
+   let corAtiva = false; // Estado inicial
 
-function mudarCor() {
-  const h1 = document.querySelector("h1"); // seleciona o h1
+function mudarcor() {
+  const h1 = document.getElementById("texto"); // seleciona todos os h1
 
   if (corAtiva) {
-    document.body.style.backgroundColor = "rgb(29, 29, 29)"; // fundo preto
-    if (h1) h1.style.color = "yellow"; // texto amarelo
+    document.body.style.background = "linear-gradient(to bottom, #ffffff, #e8e8e8)"; 
+   if (h1) h1.style.color = "black";
   } else {
-    document.body.style.backgroundColor = "lightgray"; // fundo branco
-    if (h1) h1.style.color = "black"; // texto preto
+    document.body.style.background = "linear-gradient(to bottom, #1c1c1c, #2e2e2e)";
+    if (h1) h1.style.color = "white";
   }
 
-  corAtiva = !corAtiva; // inverte o estado
+  corAtiva = !corAtiva;
 }
 </script>
 </body>
