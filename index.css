@@ -1,12 +1,22 @@
+:root {
+  --cor-primaria: #FF5722;
+  --cor-hover: #F4511E;
+  --cor-texto: #222222;
+  --cor-texto2: #1A237E;
+  --cor-fundo: #FAFAFA;
+  --cor-secundaria: #212121;
+}
 body {
-    background-color:linear-gradient(to bottom, #ffffff, #e8e8e8);
-    font:normal 20px Arial;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Roboto', sans-serif;
+}
+p,a,h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
 }
 #seta-container {
    text-decoration: none;
-
 }
-
 #seta {
     text-decoration:none;
     color:black;
@@ -17,9 +27,6 @@ body {
     padding:10px;
     top:1px;
     border: 2px solid  black;
-}
-#texto {
-
 }
 p {
     font-size:20px;
