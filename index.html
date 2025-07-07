@@ -6,7 +6,7 @@
     <title>𝙉𝙞𝙗𝙪𝙮 • 𝙎𝙤𝙗𝙧𝙚 𝙤 𝙎𝙞𝙩𝙚</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="favicon.ico" type="image/jpg">
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 <header>
@@ -20,30 +20,31 @@
 </header>
 
 <main>
+  <h2><u>Sobre o Nibuy</u></h2>
   <h1 id="texto" >  O site é feito usando a ultilidade de afiliado de alguns site. Por exemplo a shoope e o mercado livre que tem essas funcionalidades, mas os produtos são desses sites. O Nibuy é apenas para mostrar os produtos e direcionar o cliente ao site oficial para comprar. Com o tempo vai sendo adicionado mais produtos de outros sites, mas os produtos do site tem acima de 50 vendas ou visualizações então é confiavêl mais caso tenha dûvida veja as informações do produto quando apertar em Comprar. Caso apareça alguma questão importante Contate-me pelo Whatsapp ou Email: 
   </h1>
   <div id="contatos">
-    <p><strong>Gmail: eduardojos457@gmail.com</strong></p>  
-    <p><strong>Whatsapp: +55 81 9361-1017</strong></p>
+    <p>📧 eduardojos457@gmail.com</p>  
+    <p>💬 +55 81 9361-1017</p>
   </div>
 </main>
 
 <script>
-   let corAtiva = false; // Estado inicial
+  let corAtiva = false; // Estado inicial
 
-function mudarcor() {
-  const h1 = document.getElementById("texto"); // seleciona todos os h1
+  function mudarcor() {
+    const h1 = document.getElementById("texto");
 
-  if (corAtiva) {
-    document.body.style.background = "linear-gradient(to bottom, #ffffff, #e8e8e8)"; 
-   if (h1) h1.style.color = "black";
-  } else {
-    document.body.style.background = "linear-gradient(to bottom, #1c1c1c, #2e2e2e)";
-    if (h1) h1.style.color = "white";
+    if (corAtiva) {
+      document.body.style.background = "#FAFAFA";
+      if (h1) h1.style.color = "white";
+    } else {
+      document.body.style.background = "#212121";
+      if (h1) h1.style.color = "white";
+    }
+
+    corAtiva = !corAtiva;
   }
-
-  corAtiva = !corAtiva;
-}
 </script>
 </body>
 </html>
